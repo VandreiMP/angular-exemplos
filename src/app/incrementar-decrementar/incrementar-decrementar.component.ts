@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IncrementarDecrementarComponent implements OnInit {
 
-  constructor() { }
+  numero: number;
+
+  constructor() { this.numero = 0 }
 
   ngOnInit(): void {
+  }
+
+  incrementaNumero(): void {
+      this.numero += 1;
+
+  }
+
+  decrementaNumero(): void {
+
+    this.numero -= 1;
+
   }
 
 }
