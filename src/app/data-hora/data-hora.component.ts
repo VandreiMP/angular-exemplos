@@ -11,9 +11,17 @@ export class DataHoraComponent implements OnInit {
 
   constructor() {
     this.dataHora = new Date();
+
+    //aqui chama método que exibe data hora em tempo real
+    setInterval(() => this.atualizarDataHora(), 1000);
   }
 
   ngOnInit(): void {
+
+  }
+
+  atualizarDataHora(): void {
+    this.dataHora = new Date();
   }
 
 }
