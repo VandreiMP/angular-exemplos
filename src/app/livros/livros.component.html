@@ -1,5 +1,11 @@
 <ul>
     <li *ngFor='let livro of livros'>
-        <b>"{{livro.titulo}}"</b> - <em>{{livro.autor}}</em>
+        <p>
+            <b>"{{livro.titulo}}"</b> - <em>{{livro.autor}}</em>
+        </p>
+        <p>
+            <button *ngIf = 'livro.disponivel'>Comprar</button>
+            <button disabled *ngIf = '!livro.disponivel'>Indisponível</button>
+        </p>
     </li>
 </ul>

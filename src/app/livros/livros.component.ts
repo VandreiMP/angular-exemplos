@@ -14,15 +14,18 @@ export class LivrosComponent implements OnInit {
     this.livros = [
       {
         titulo: 'JavaScript: O Guia Definitivo',
-        autor: 'David Flanagan'
+        autor: 'David Flanagan',
+        disponivel: true
       },
       {
         titulo: 'O Melhor do JavaScript',
-        autor: 'Douglas Cockford'
+        autor: 'Douglas Cockford',
+        disponivel: true
       },
       {
         titulo: 'JavaScript Design Patterns',
-        autor: 'Addy Osmani'
+        autor: 'Addy Osmani',
+        disponivel: false
       }
     ]
   }
